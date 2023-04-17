@@ -11,6 +11,7 @@ export const Filter = ({ value, onFilterContacts }) => {
           value={value}
           name="filter"
           onChange={onFilterContacts}
+          placeholder="Enter the filter value..."
         />
       </label>
     </>

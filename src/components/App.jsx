@@ -44,6 +44,14 @@ export class App extends Component {
     return list;
   };
 
+  deleteContacts = contactId => {
+    const { contacts } = this.state;
+    this.setState({
+      contacts: contacts.filter(contact => contact.id !== contactId),
+    });
+    // contacts.filter(contact => contact.id !== idToRemove);
+  };
+
   render() {
     const contacts = this.filteredContacts();
 
@@ -52,14 +60,17 @@ export class App extends Component {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          width: '420px',
+          padding: '20px',
           justifyContent: 'center',
+          backgroundColor: '#fff',
           color: '#010101',
           gap: '30px',
+          border: '1px solid black',
+          borderRadius: '4px',
         }}
       >
         <InputForm onSubmitForm={this.onSubmitForm}></InputForm>
-        <Contacts contacts={contacts}>
+        <Contacts contacts={contacts} deleteContacts={this.deleteContacts}>
           <Filter
             onFilterContacts={this.onFilterContacts}
             value={this.state.filter}

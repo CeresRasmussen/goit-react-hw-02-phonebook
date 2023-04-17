@@ -46,13 +46,22 @@ export const InputForm = ({ onSubmitForm }) => {
         <Form className={css['input-form']}>
           <label htmlFor={loginInputId} className={css['sub-title']}>
             Name
-            <Field id={loginInputId} type="text" name="name" />
+            <Field
+              id={loginInputId}
+              type="text"
+              name="name"
+              placeholder="Enter the contact's name..."
+            />
             <ErrorMessage name="name" component="div" />
           </label>
 
           <label htmlFor={loginInputId} className={css['sub-title']}>
             Number
-            <Field type="tel" name="number" />
+            <Field
+              type="tel"
+              name="number"
+              placeholder="Enter the contact's number..."
+            />
             <ErrorMessage name="number" component="div" />
           </label>
 
