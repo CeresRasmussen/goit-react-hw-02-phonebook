@@ -23,6 +23,7 @@ label div {
   color: rgb(186, 20, 20);
 }
 input {
+  padding: 10px;
   font-size: 18px;
   border-radius: 4px;
 }
