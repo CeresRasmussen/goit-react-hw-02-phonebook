@@ -11,7 +11,7 @@ export const Contacts = ({ contacts, deleteContacts, children }) => {
         <ul>
           {contacts.map(({ id, name, number }) => (
             <li key={id} className={css.item}>
-              <span>{name}: </span>
+              <span>{name} </span>
               <span>{number}</span>
               <button
                 type="button"

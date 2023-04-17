@@ -62,7 +62,7 @@ export class App extends Component {
           flexDirection: 'column',
           padding: '20px',
           justifyContent: 'center',
-          backgroundColor: '#fff',
+          backgroundColor: 'antiquewhite',
           color: '#010101',
           gap: '30px',
           border: '1px solid black',
