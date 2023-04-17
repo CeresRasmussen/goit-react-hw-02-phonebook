@@ -32,10 +32,12 @@ label {
 }
 
 .close {
+  padding: 5px;
   height: 24px;
   width: 24px;
   background-color: #fff;
   display: flex;
+  border: none;
   justify-content: center;
   align-items: center;
   font-size: 12px;

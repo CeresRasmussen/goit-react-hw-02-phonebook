@@ -65,7 +65,9 @@ export const InputForm = ({ onSubmitForm }) => {
             <ErrorMessage name="number" component="div" />
           </label>
 
-          <button type="submit">Add contact</button>
+          <button type="submit" className={css.button}>
+            Add contact
+          </button>
         </Form>
       </Formik>
     </section>
