@@ -7,6 +7,7 @@ export const Filter = ({ value, onFilterContacts }) => {
       <label className={css.title}>
         Find contact by name
         <input
+          className={css.input}
           type="text"
           value={value}
           name="filter"
